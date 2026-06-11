@@ -1,3 +1,16 @@
 body {
+  background-color: gray;
+}
+
+input:invalid {
   background-color: red;
+}
+
+form > p > label {
+  display: flex;
+  flex-direction: column;
+  input,
+  select {
+    width: 200px;
+  }
 }

@@ -6,6 +6,61 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello Mikay</h1>
+    <form action="" novalidate>
+      <p>
+        <label>
+          <span>Email:</span>
+          <input
+            name="email-input"
+            placeholder="abc@example.com"
+            type="email"
+            id="email-input"
+            required
+          />
+          <span class="message email"></span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Country</span>
+          <select name="country-input" id="country-input" required>
+            <option value="ph">Philippines</option>
+            <option value="jp">Japan</option>
+            <option value="id">Indonesia</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Postal Code</span>
+          <input name="postal-input" type="text" id="postal-input" required />
+          <span class="message postal"></span>
+        </label>
+      </p>
+      <p>
+        <label>
+          <span>Password: </span>
+          <input
+            name="password-input"
+            type="password"
+            id="password-input"
+            required />
+          <span class="message password"></span
+        ></label>
+      </p>
+      <p>
+        <label>
+          <span>Confirm Password: </span>
+          <input
+            name="confirm-password-input"
+            type="password"
+            id="confirm-password-input"
+            required
+          />
+          <span class="message confirm-password"></span>
+        </label>
+      </p>
+      <button type="submit" id="submit-btn">Submit</button>
+    </form>
   </body>
 </html>
